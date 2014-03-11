@@ -1,0 +1,40 @@
+body { 
+	font-family: helvetica, arial, sans-serif; 
+}
+
+
+#debug {
+	margin: 20px 0;
+	font-size: 14px;
+}
+
+.carousel {
+	width: 800px;
+	margin: 0 auto 40px auto;
+}
+.carousel#horizontal {
+	width: 860px;
+}
+	.carousel#horizontal .slide {
+		float: left;
+		width: 200px;
+		margin: 0 5px 0 0;
+	}
+	.carousel#vertical .slide {
+		height: 200px;
+		margin: 0 0 5px;
+	}
+	.carousel .scroll_toggle {
+		cursor: pointer;
+		font-size: 14px;
+		position: relative;
+		overflow: hidden;
+	}
+	.carousel#horizontal .carousel_wrap {
+		float: left;
+	}
+	.carousel#horizontal .scroll_toggle {
+		float: left;
+		float: left;
+		width: 30px;
+	}

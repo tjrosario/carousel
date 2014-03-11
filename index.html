@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="carousel.css" />
+	</head>
+	<body>
+	
+		
+		<h1>Vertical Carousel</h1>
+		<section id="vertical" class="carousel">
+			<div class="carousel_wrap">
+				<div class="scroller_content">
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/animals">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/arch">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/nature">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/people">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/tech">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<h1>Horizontal Carousel</h1>
+		<section id="horizontal" class="carousel">
+			<div class="carousel_wrap">
+				<div class="scroller_content">
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/animals/sepia">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/arch/sepia">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/nature/sepia">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/people/sepia">
+					</div>
+					<div class="slide">
+						<img src="http://placeimg.com/200/200/tech/sepia">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<div id="debug">
+			
+		</div>
+	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+		<script src="carousel.js"></script>
+		<script>
+			jQuery(document).ready(function (event) {
+				new Carousel($('#horizontal'), {
+					scrollX: true,
+					scrollY: false
+				});
+				new Carousel($('#vertical'), {
+					scrollX: false,
+					scrollY: true,
+					numSlidesToShow: 2
+				});
+			});
+		</script>
+	</body>
+</html>

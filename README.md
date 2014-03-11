@@ -1,0 +1,3 @@
+## Carousel
+
+Lightweight carousel plugin.
